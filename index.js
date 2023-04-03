@@ -1,5 +1,11 @@
 function isPalindrome(word) {
-  // Write your algorithm here
+  reverseWord = word.split("").reverse().join("");
+  
+  if (word === reverseWord) {
+    return true
+  }else{
+    return false
+  }
 }
 
 /* 
@@ -7,7 +13,16 @@ function isPalindrome(word) {
 */
 
 /*
-  Add written explanation of your solution here
+  The reversse of the Argument of the function Palindrome should be the same as
+  the object is palindrome
+
+  take an argument
+
+  reverse the argument
+
+  if the reverse of the argument is the same as the argument, return true
+
+  if the reverse of the argument is not the same as the argument, return false
 */
 
 // You can run `node index.js` to view these console logs
@@ -23,3 +38,5 @@ if (require.main === module) {
 }
 
 module.exports = isPalindrome;
+
+
